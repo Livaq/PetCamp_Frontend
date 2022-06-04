@@ -1,0 +1,1 @@
+This folder for "Start page" components

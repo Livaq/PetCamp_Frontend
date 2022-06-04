@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.user-profile-wrap {
+  background: rgba(117, 238, 217, 0.1);
+  min-height: 100vh;
+  padding-bottom: 6.25rem;
+}
+
+.user-profile__main {
+  .user-profile__banner {
+    width: 100%;
+    background-image: url(../../../assets/images/user-profile-background.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    height: 25vh;
+    z-index: 1;
+    margin-bottom: 6rem;
+    position: relative;
+
+    .pencil-banner {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0.5rem;
+    }
+  }
+
+  .user-profile__content {
+    position: relative;
+    padding-bottom: 6.25rem;
+
+    .user-profile__main__avatar-container {
+      display: flex;
+      align-items: baseline;
+      position: absolute;
+      top: calc(-6rem - 106px);
+      z-index: 2;
+      left: 4%;
+
+      & img:first-child {
+        height: 200px;
+        width: 200px;
+      }
+
+      .pencil {
+        position: absolute;
+        top: 0;
+        left: 70%;
+      }
+
+      .user-profile__main__name {
+        font-family: Bahianita;
+        font-size: 3.3rem;
+        display: inline-block;
+        position: absolute;
+        bottom: 2rem;
+        right: -5rem;
+        color: #000000;
+      }
+    }
+
+    .my-setting__content-container {
+      margin: 0 auto;
+      width: 90%;
+      .my-setting__container {
+        width: 35%;
+        h2 {
+          font-family: 'Noto Sans';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 2rem;
+          line-height: 2.75rem;
+          color: #000000;
+          padding-bottom: 1rem;
+          padding-top: 2.6rem;
+        }
+
+        .my-settings__label {
+          font-family: 'Noto Sans';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.125rem;
+          line-height: 1.6rem;
+          color: #000000;
+          display: flex;
+          justify-content: flex-start;
+          padding-bottom: 1.5rem;
+
+          div {
+            min-width: 10rem;
+            padding-right: 0;
+            margin-right: 0;
+          }
+          p {
+            min-width: 30rem;
+            padding-left: 0;
+            margin-left: 0;
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.25rem;
+            line-height: 1.7rem;
+          }
+        }
+
+        .my-settings__input {
+          background: #ffffff;
+          border: 0.5px solid #76707f;
+          box-sizing: border-box;
+          border-radius: 5px;
+          width: 20rem;
+          height: 1.875rem;
+          padding-left: 0.3rem;
+          font-family: 'Noto Sans';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.25rem;
+          line-height: 1.7rem;
+        }
+
+        .my-settings__submit-button {
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          width: 6.25rem;
+          height: 2.5rem;
+          font-family: 'Noto Sans';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1rem;
+          line-height: 1.4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: #7879f1;
+          border: 1px solid #3b3b80;
+          border-radius: 5px;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.user-profile__header__profile {
+  /* К чему относится данный стиль? */
+  background-color: #a5a6f6;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Sans';
+  font-size: 1.05rem;
+}
+
+@media screen and (max-width: 1044px) {
+  .user-profile__main {
+    .user-profile__content {
+      position: relative;
+    }
+  }
+}
+
+@media screen and (max-width: 788px) {
+  .user-profile-wrap {
+    .user-profile__header {
+      .user-profile__header__reserve-button {
+        position: relative;
+        left: 2rem;
+      }
+    }
+  }
+
+  .user-profile__main {
+    .user-profile__content {
+      position: relative;
+
+      .user-profile__main__avatar-container {
+        top: calc(-6rem - 81px);
+
+        & img:first-child {
+          height: 150px;
+          width: 150px;
+        }
+
+        .pencil {
+          position: absolute;
+          top: 0;
+          left: 70%;
+        }
+
+        .user-profile__main__name {
+          font-size: 3.3rem;
+          bottom: 0;
+          right: -4rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.cant-delete-pet{
+  .cant-delete-pet__content {
+    color: black;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  
+  .cant-delete-pet__actions {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+    .cant-delete-pet__go-back-btn {
+      width: 6.4rem;
+      height: 2.5rem;
+      border: 1px solid #7879F1;
+      border-radius: 0.5rem;
+      background-color: transparent;
+      margin-bottom: 1rem;
+      color: #7879F1;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      &:hover {
+        background-color: #7879F1;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.particular-report {
+  font: 400 normal 20px/27px 'Noto Sans', sans-serif;
+  .report-number {
+    font: 500 normal 38px/46px 'Bahianita', cursive !important;
+    span{
+      font-size: 2rem;
+      margin-right: 0.3rem;
+    }
+  }
+  .report-info {
+    margin-bottom: 30px;
+  }
+  .report-info__item {
+    margin-top: 10px;
+  }
+  span.report-info__item {
+    display: inline-block;
+    margin-right: 80px;
+  }
+  .report-photos {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 425px;
+    display: flex;
+    justify-content: space-between;
+    .report-photo {
+      background-color: #c4c4c4;
+      height: 70px;
+      width: 120px;
+    }
+  }
+}

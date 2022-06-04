@@ -1,0 +1,34 @@
+.contacts-item__container{
+  width: 100%;
+  font-family: Noto Sans, serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin: 2rem 0 2rem 0;
+
+  .contacts-item__city{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    background: transparent;
+    cursor: pointer;
+    &:hover{
+      color: #1d5d90;
+    }
+
+    span{
+      margin-left: 0.25rem;
+    }
+  }
+  .contacts-item__contacts-container{
+    display: flex;
+    justify-content: start;
+
+    .contacts-item__street{
+      width: 14rem;
+    }
+    .contacts-item__telephone-number{
+      margin-left: 5rem;
+    }
+  }
+
+}

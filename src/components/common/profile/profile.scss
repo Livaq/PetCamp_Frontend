@@ -1,0 +1,51 @@
+.user-profile-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin-right: 1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    width: 3rem;
+  }
+
+  .user-profile-text {
+    font-size: 2.4rem;
+    font-family: 'Bahianita', serif;
+  }
+}
+
+@media screen and (max-width: 788px) {
+  .user-profile-container {
+    gap: 0.5rem;
+
+    img {
+      width: 2.5rem;
+    }
+
+    .user-profile-text {
+      font-size: 2.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .user-profile-container {
+    gap: 0.5rem;
+
+    img {
+      width: 2rem;
+    }
+
+    .user-profile-text {
+      font-size: 1.8rem;
+    }
+  }
+}

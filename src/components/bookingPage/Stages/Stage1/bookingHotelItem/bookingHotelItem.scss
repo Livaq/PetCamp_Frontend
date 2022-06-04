@@ -1,0 +1,83 @@
+.booking-hotel-item__container {
+  .booking-hotel-item__address-block {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    font-size: 1.25rem;
+    margin-bottom: 1.6rem;
+
+    span:nth-child(1) {
+      font-weight: 600;
+    }
+
+    span:nth-child(2) img {
+      width: 0.9rem;
+      height: 1.1rem;
+      margin-right: 0.4rem;
+    }
+  }
+
+  .booking-hotel-item__available-rooms-block {
+    width: 80%;
+
+    .booking-hotel-item__available-rooms-block_header {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .booking-hotel-item__available-rooms-block_content {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.6rem;
+      position: relative;
+
+      .booking-hotel-item__available-rooms-block_check-item {
+        div:nth-child(1) {
+          color: gray;
+          font-size: 0.75rem;
+        }
+
+        div:nth-child(2) {
+          color: black;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .proceed-booking__price {
+      position: relative;
+      left: 1.4rem;
+
+      span:nth-child(1) {
+        color: gray;
+        font-size: 1.2rem;
+        margin-right: 0.3rem;
+      }
+
+      span:nth-child(2) {
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 1px;
+      }
+    }
+
+    .proceed-booking__price-unlogged {
+      position: absolute;
+      bottom: 0rem;
+      right: -2rem;
+
+      span:nth-child(1) {
+        color: gray;
+        font-size: 1.2rem;
+      }
+
+      span:nth-child(2) {
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

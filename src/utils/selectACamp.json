@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "city": "Minsk",
+      "street": "Ponomarenko",
+      "latitude": 53.892925,
+      "longitude": 27.493793,
+      "type": "CAT"
+    },
+    {
+      "id": 2,
+      "city": "Minsk",
+      "street": "DogMinsk",
+      "latitude": 53.872974,
+      "longitude": 27.555732,
+      "type": "DOG"
+    },
+    {
+      "id": 3,
+      "city": "Brest",
+      "street": "CatBrest",
+      "latitude": 52.090937,
+      "longitude": 23.713359,
+      "type": "CAT"
+    },
+    {
+      "id": 4,
+      "city": "Brest",
+      "street": "DogBrest",
+      "latitude": 52.088591,
+      "longitude": 23.690532,
+      "type": "DOG"
+    }
+  ]

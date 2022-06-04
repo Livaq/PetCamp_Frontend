@@ -1,0 +1,135 @@
+.start-page-content__wrap {
+  position: relative;
+  width: 100%;
+  background: rgba(117, 238, 217, 0.1);
+  min-height: 100vh;
+
+  .start-page-content__container {
+    width: 80%;
+    margin: 2rem auto 0;
+    padding-bottom: 9rem;
+    display: flex;
+    justify-content: space-between;
+
+    .start-page-content__middle-stroke {
+      height: 400px;
+      border-right: black dashed 1px;
+      margin: 30px 0 0 0;
+    }
+
+    .start-page-content__why-us {
+      width: 45%;
+
+      .start-page-content__promo {
+        width: 100%;
+        font-family: 'Bahianita', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+
+      .start-page-content__frame {
+        width: 100%;
+        margin-bottom: 30px;
+        font-family: 'Noto Sans', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.25rem;
+        align-items: center;
+        color: #000000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .start-page-content__wrap {
+
+    .start-page-content__container {
+      width: 85%;
+
+      .start-page-content__why-us {
+
+        .start-page-content__promo {
+          font-size: 2.5rem;
+        }
+
+        .start-page-content__frame {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .start-page-content__wrap {
+
+    .start-page-content__container {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+
+      .start-page-content__middle-stroke {
+        height: 0;
+        width: 80vw;
+        margin: 2rem auto;
+        border-bottom: black solid 1px;
+      }
+
+      .start-page-content__why-us {
+        width: 100%;
+
+        .start-page-content__promo {
+          width: 100%;
+          text-align: center;
+          font-size: 3rem;
+        }
+
+        .start-page-content__frame {
+          font-size: 1.3rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 788px) {
+  .start-page-content__wrap {
+
+    .start-page-content__container {
+
+      .start-page-content__why-us {
+
+        .start-page-content__promo {
+          font-size: 3rem;
+        }
+
+        .start-page-content__frame {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .start-page-content__wrap {
+
+    .start-page-content__container {
+
+      .start-page-content__why-us {
+
+        .start-page-content__promo {
+          font-size: 2.7rem;
+        }
+
+        .start-page-content__frame {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}

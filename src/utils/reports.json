@@ -1,0 +1,16 @@
+[
+    {
+      "name": "Milo",
+      "booking": "1012",
+      "manager": "Alex Gurbo",
+      "date": "10.10.2021",
+      "camera": true
+    },
+    {
+        "name": "Felix",
+        "booking": "1007",
+        "manager": "Alex Gurbo",
+        "date": "10.08.2021",
+        "camera": false
+    }
+  ]

@@ -1,0 +1,113 @@
+.admin-page-reservations__header-position {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: white;
+}
+
+.admin-page-reservations {
+  width: 80%;
+  position: absolute;
+  left: 280px;
+  top: 100px;
+
+  @media screen and (max-width: 1450px) {
+    left: 230px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 75%;
+  }
+
+  h2 {
+    font: 400 normal 70px/70px 'Bahianita', cursive;
+  }
+
+  .report-input {
+    margin-top: 15px;
+    display: inline-block;
+
+    h3 {
+      font: 400 normal 20px/27px 'Noto Sans', sans-serif;
+      display: inline-block;
+    }
+
+    span {
+      padding-left: 15px;
+    }
+
+    select {
+      outline: 1px solid#000000;
+      margin-left: 80px;
+      padding-left: 8px;
+      padding-right: 20px;
+      width: 224px;
+      height: 34px;
+      border-radius: 5px;
+    }
+  }
+
+  .report-input~.report-input {
+    margin-left: 20px;
+  }
+
+  table {
+    margin-top: 40px;
+    border-spacing: 0px;
+    width: 95%;
+
+    th {
+      border: 1px solid #aaaaaa;
+      height: 40px;
+      font: 400 normal 14px/19px 'Noto Sans', sans-serif;
+    }
+  }
+
+  .MuiBadge-badge {
+    color: black;
+    background: #fff;
+    border: 0.1875em solid #0F1C3F;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+  }
+
+  .MuiButtonBase-root {
+    padding: 4px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+    width: 250px;
+    min-height: 22px;
+  }
+
+  .MuiTabs-flexContainer {
+    background-color: #E1E1E1;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    min-height: 30px;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .booking-selector {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Mui-selected {
+    background: #fff;
+    color: black !important;
+    cursor: pointer;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .MuiTabs-indicator {
+    display: none;
+  }
+}

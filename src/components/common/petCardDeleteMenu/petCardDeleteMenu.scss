@@ -1,0 +1,86 @@
+@keyframes petCardDeleteMenuFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pet-card-delete-menu__wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  .pet-card-delete-menu__background {
+    background: rgba(118, 112, 127, 0.5);
+    width: 100vw;
+    height: 100vh;
+    animation: petCardDeleteMenuFadeIn 0.4s ease-out;
+
+    .pet-card-delete-menu__container {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .pet-card-delete-menu__content {
+        width: 20rem;
+        height: 11rem;
+        margin: 0 auto;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+        .pet-card-delete-menu__message {
+          font-family: Noto Sans;
+          font-size: 1.25rem;
+          text-align: center;
+          padding: 2rem 0 1.5rem 0;
+        }
+
+        .pet-card-delete-menu__btn-container {
+          display: flex;
+          justify-content: space-evenly;
+
+          .pet-card-delete-menu__button {
+            display: block;
+            border-radius: 5px;
+            background-color: white;
+            width: 100px;
+            height: 40px;
+            font: 600 normal 1rem 'Noto Sans', Sans;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: all 0.3s ease-in-out;
+          }
+
+          .accept-btn {
+            color: #7879f1;
+            border: 1px solid #7879f1;
+
+            &:hover {
+              background-color: #7879f1;
+              cursor: pointer;
+              color: white;
+            }
+          }
+
+          .decline-btn {
+            color: rgb(219, 93, 158);
+            border: 1px solid rgb(219, 93, 158);
+
+            &:hover {
+              background-color: rgb(219, 93, 158);
+              cursor: pointer;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}

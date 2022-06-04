@@ -1,0 +1,88 @@
+.admin-page-reports {
+  width: 75%;
+  position: absolute;
+  left: 280px;
+  top: 100px;
+  hr {
+    background-color: #000000;
+  }
+  @media screen and (max-width: 1450px) {
+    left: 230px;
+  }
+  h2 {
+    font: 400 normal 70px/70px 'Bahianita', cursive;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .inputs {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+  }
+  input {
+    outline: 1px solid#000000;
+    width: 224px;
+    height: 34px;
+    border-radius: 5px;
+  }
+  .report-input {
+    margin-top: 15px;
+    display: flex;
+    h3 {
+      font: 400 normal 20px/27px 'Noto Sans', sans-serif;
+      display: inline-block;
+    }
+    .datepicker {
+      margin-left: 28px;
+      display: inline-block;
+    }
+    input {
+      margin-left: 15px;
+      padding-left: 10px;
+    }
+    span {
+      padding-left: 15px;
+    }
+    select {
+      outline: 1px solid#000000;
+      margin-left: 30px;
+      padding-left: 8px;
+      padding-right: 20px;
+      width: 224px;
+      height: 34px;
+      border-radius: 5px;
+    }
+  }
+  .input-calendar {
+    position: relative;
+    .calendar {
+      display: block;
+      position: absolute;
+      height: 24px;
+      width: 19px;
+      background: url('../../../assets/icons/calendar.png') center center
+        no-repeat;
+      background-size: contain;
+      top: 5px;
+      right: 15px;
+    }
+  }
+  padding-bottom: 50px;
+  table {
+    margin-top: 40px;
+    border-spacing: 0px;
+    width: 95%;
+    th {
+      border: 1px solid #aaaaaa;
+      height: 40px;
+      font: 400 normal 14px/19px 'Noto Sans', sans-serif;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 900;
+      }
+    }
+  }
+}

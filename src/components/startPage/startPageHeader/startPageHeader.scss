@@ -1,0 +1,184 @@
+.start-page__header-block {
+  width: 100%;
+  background-image: url(../../../assets/images/bkgImage.png);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 70vw;
+  background-position-x: center;
+  background-position-y: center;
+  min-height: 45vh;
+  margin-bottom: 1rem;
+
+  .content {
+    font-family: 'Bahianita', cursive;
+    width: 80%;
+    height: 100%;
+    min-height: 45vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .header-block__text-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      height: 9rem;
+      width: 100%;
+      color: #594334;
+
+      h1 {
+        font-size: 8rem;
+        font-weight: 400;
+      }
+
+      .slogan {
+        font-family: "Noto Sans";
+        color: black;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .start-page__header-block {
+    background-size: 85vw;
+
+    .content {
+
+      .header-block__text-block {
+        height: 9rem;
+
+        h1 {
+          font-size: 7rem;
+        }
+
+        .slogan {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .start-page__header-block {
+    background-size: 95vw;
+
+    .content {
+      width: 85%;
+
+      .header-block__text-block {
+        height: 9rem;
+
+        h1 {
+          font-size: 6rem;
+        }
+
+        .slogan {
+          font-size: 1.3rem;
+          margin-bottom: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .start-page__header-block {
+    background-size: 100vw;
+
+    .content {
+      width: 90%;
+
+      .header-block__text-block {
+        height: 8rem;
+
+        h1 {
+          font-size: 5rem;
+        }
+
+        .slogan {
+          font-size: 1.2rem;
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 788px) {
+  .start-page__header-block {
+    background-size: 100vw;
+    min-height: 40vh;
+
+    .content {
+      width: 90%;
+      min-height: 40vh;
+
+      .header-block__text-block {
+        height: 7rem;
+
+        h1 {
+          font-size: 4rem;
+        }
+        .slogan {
+          font-size: 1.1rem;
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .start-page__header-block {
+    background-size: 100vw;
+    min-height: 35vh;
+
+    .content {
+      width: 90%;
+      min-height: 35vh;
+
+      .header-block__text-block {
+        height: 6rem;
+
+        h1 {
+          font-size: 3.6rem;
+        }
+        .slogan {
+          font-size: 1.0rem;
+          margin-bottom: 0.6rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .start-page__header-block {
+    background-size: 100vw;
+    min-height: 30vh;
+
+    .content {
+      width: 90%;
+      min-height: 30vh;
+
+      .header-block__text-block {
+        height: 6rem;
+
+        h1 {
+          font-size: 2.5rem;
+        }
+        .slogan {
+          font-size: 1rem;
+          margin-bottom: 0.2rem;
+        }
+      }
+    }
+  }
+}

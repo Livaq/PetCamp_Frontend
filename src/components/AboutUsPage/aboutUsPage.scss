@@ -1,0 +1,65 @@
+.about-us-page__wrap {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: rgba(117, 238, 217, 0.1);
+
+  .about-us-page__container {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+
+    .overline{
+      border-top: solid 1px gray;
+    }
+
+    h2 {
+      font-family: Bahianita, serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 3.25rem;
+      padding: 4rem 0 1rem 0;
+    }
+
+    .about-us-page__content-container {
+      display: flex;
+      justify-content: space-between;
+
+      .about-us-page__content-text {
+        font-family: Noto Sans, serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.1rem;
+        margin-right: 15rem;
+
+        .about-us-page__features-header{
+          font-size: 1.35rem;
+          margin: 2rem 0 2rem 0;
+          padding-top: 2rem;
+        }
+
+        p {
+          margin-top: 1rem;
+        }
+        ul li{
+          margin: 0.5rem 0;
+        }
+        ul li span{
+          font-weight: 600;
+        }
+      }
+
+      .about-us-page__image-container {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 6rem;
+        margin-top: 1rem;
+
+        .about-us-page__image {
+          width: 24rem;
+          height: 16rem;
+        }
+      }
+    }
+  }
+}

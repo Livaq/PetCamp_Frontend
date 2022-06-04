@@ -1,0 +1,255 @@
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes MenuDrop {
+  from {
+    transform: translateY(-110%);
+  }
+
+  to {
+    transform: translateY(15vh);
+  }
+}
+
+.MuiBox-root {
+  padding: 20px 0 !important;
+  animation: fadeInAnimation 0.6s ease-in-out;
+
+  .authorisation__container {
+    width: 350px;
+    min-height: 550px;
+    margin: 0 auto;
+    transform: translateY(15vh);
+    border-radius: 5px;
+    background: #ffffff;
+  }
+
+  .authorisation__header {
+    font-family: 'Helvetica', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    margin: 0 0 10px 50px;
+    padding-top: 30px;
+    color: #000000;
+  }
+
+  label.invalid-input {
+    input {
+      outline: none;
+      border: solid 1px #ff5050 !important;
+    }
+
+    &::after {
+      content: 'Invalid value';
+      font: 400 normal 9px/13px 'Noto Sans', serif;
+      display: block;
+      position: absolute;
+      color: #ff5050;
+      width: 54px;
+      height: 13px;
+      bottom: -17px;
+      right: 55px;
+      z-index: 1000;
+    }
+  }
+
+  label.invalid-password-input {
+    input {
+      outline: none;
+      border: solid 1px #ff5050 !important;
+    }
+
+    &::after {
+      content: 'Password must be between 8 to 14 characters, contain of A-z caracters, upper-lower cases, minimum one number and one special symbol';
+      font: 400 normal 9px/13px 'Noto Sans', serif;
+      display: block;
+      color: #ff5050;
+      margin: 0 60px;
+      z-index: 1000;
+    }
+  }
+
+  label.valid-input {
+    input {
+      outline: none;
+      border: solid 1px #48c417 !important;
+    }
+  }
+
+  .label-password,
+  .label {
+    display: block;
+    position: relative;
+
+    .toggle-visibility {
+      border: none;
+      position: absolute;
+      top: 50px;
+      right: 60px;
+      height: 14px;
+      width: 24px;
+      background-color: #000;
+      background: url('../../../assets/icons/eye.svg') center center;
+      background-size: cover;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.visible {
+        background: url('../../../assets/icons/openedEye.svg') center center;
+        background-size: 100% 140%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .invalid-input {
+      outline: none;
+      border: solid 1px #ff5050 !important;
+    }
+  }
+
+  .authorisation__labels {
+    font-family: 'Helvetica', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    margin: 0 0 10px 50px;
+    color: #444141;
+  }
+
+  .authorisation__inputs {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 15px auto;
+    border: solid 1px gray;
+    padding-left: 17px;
+  }
+
+  .authorisation__forgot-password {
+    font-family: 'Noto Sans', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    color: rgb(43, 92, 255);
+    cursor: pointer;
+    top: -17px;
+    left: 50px;
+  }
+
+  .authorisation__forgot-password:hover {
+    border-bottom: black 1px solid;
+  }
+
+  .authorisation__submit {
+    width: 250px;
+    height: 40px;
+    color: white;
+    background: #5d5fef;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: 'Helvetica', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    display: block;
+    margin: 50px auto 25px auto;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .authorisation__submit:disabled {
+    background: #5758aa;
+    color: gray;
+    cursor: default;
+  }
+
+  .authorisation__or {
+    font-family: 'Helvetica', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+    color: #444141;
+  }
+
+  .authorisation__or:before {
+    content: '';
+    position: absolute;
+    width: 110px;
+    top: 15px;
+    left: 45px;
+    height: 0;
+    border-top: 1px solid #000000;
+  }
+
+  .authorisation__or:after {
+    content: '';
+    position: absolute;
+    width: 110px;
+    top: 15px;
+    right: 45px;
+    height: 0;
+    border-top: 1px solid #000000;
+  }
+
+  .authorisation__facebook-authorisation {
+    text-align: center;
+
+    .authorisation__facebook-img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .authorisation__facebook-img:hover {
+      cursor: pointer;
+    }
+  }
+
+  .authorisation__sign-up-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Helvetica', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #444141;
+
+    .authorisation__sign-up {
+      border: none;
+      background-color: transparent;
+      margin-left: 5px;
+      color: #c72a0c;
+    }
+
+    .authorisation__sign-up:hover {
+      cursor: pointer;
+      border-bottom: 1px solid #c72a0c;
+    }
+  }
+
+  .error-text {
+    color: red;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+}

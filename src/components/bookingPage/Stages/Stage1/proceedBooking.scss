@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.proceed-booking__wrap {
+  width: 100%;
+  height: 100%;
+
+  .proceed-booking__container {
+    width: 36.56rem;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-family: Noto Sans;
+
+    .proceed-booking__inner-container {
+      padding: 5% 3% 5% 3%;
+      width: 100%;
+
+      .proceed-booking__unlogged {
+        font-size: 1.5rem;
+        color: #FF1066;
+        margin: 3.5rem 0 3.5rem 0;
+      }
+
+      .proceed-booking__header {
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .proceed-booking__additional-options_container {
+        .proceed-booking__additional-options_header {
+          font-size: 1.25rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .proceed-booking__additional-options_item {
+          display: flex;
+          justify-content: space-between;
+          width: 75%;
+
+          .proceed-booking__checkbox {
+            input {
+              width: 1.25rem;
+              height: 1.25rem;
+              margin-right: 0.5rem;
+              top: 3px;
+              position: relative;
+            }
+
+            label {
+              font-size: 1.1rem;
+            }
+          }
+        }
+
+        .proceed-booking__price {
+          span:nth-child(1) {
+            color: gray;
+            font-size: 1.2rem;
+          }
+
+          span:nth-child(2) {
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+          }
+        }
+
+        .proceed-booking__additional-options_info {
+          margin-bottom: 0.7rem;
+
+          img {
+            position: relative;
+            width: 1rem;
+            height: 1rem;
+            top: 3px;
+          }
+
+          span {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .proceed-booking__total-price {
+        font-size: 1.25rem;
+        margin-top: 1.6rem;
+      }
+
+      .proceed-booking__agreements_container {
+        margin-top: 1.6rem;
+
+        div:first-child {
+          font-size: 1.25rem;
+        }
+
+        .proceed-booking__checkbox {
+          margin-top: 0.5rem;
+
+          input {
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.5rem;
+            top: 3px;
+            position: relative;
+          }
+
+          label {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .proceed-booking__agreements-and-conditions {
+        margin: 1rem 0 1rem 0;
+
+        strong a{
+          text-decoration: none;
+          color: black;
+        }
+
+        strong:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+        img {
+          width: 1rem;
+          height: 1rem;
+          position: relative;
+          top: 2px;
+        }
+
+        span {
+          font-size: 1rem;
+          margin-left: 0.5rem;
+        }
+      }
+
+      .proceed-booking__book-button-container {
+        text-align: center;
+        margin: 2rem auto 0 auto;
+
+        .proceed-booking__book-button {
+          display: inline-block;
+          width: 7.5rem;
+          height: 2.5rem;
+          font-size: 1.3rem;
+          background-color: #5d5fef;
+          border-radius: 0.4rem;
+          cursor: pointer;
+          color: white;
+          align-self: flex-end;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          transition-duration: 0.5s;
+
+        }
+        .proceed-booking__book-button-disabled {
+          display: inline-block;
+          width: 7.5rem;
+          height: 2.5rem;
+          font-size: 1.3rem;
+          background-color: gray;
+          border-radius: 0.4rem;
+          cursor: pointer;
+          color: white;
+          align-self: flex-end;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          transition-duration: 0.5s;
+
+        }
+      }
+    }
+  }
+}

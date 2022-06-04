@@ -1,0 +1,29 @@
+.feedback-item__container {
+  .feedback-item__header {
+    display: flex;
+    line-height: 1;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+
+    .feedback-item__user-name {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-right: 0.25rem;
+    }
+
+    .feedback-item__vote-date {
+      font-size: 0.75rem;
+      color: #76707F;
+      margin-right: 0.75rem;
+
+    }
+
+    div img {
+      margin: 0 0.1rem;
+    }
+  }
+
+  .feedback-item__content {
+    margin-bottom: 0.75rem;
+  }
+}

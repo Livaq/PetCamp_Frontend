@@ -1,0 +1,42 @@
+.admin-page-employees {
+  position: absolute;
+  left: 280px;
+  top: 100px;
+  width: 80%;
+  @media screen and (max-width: 1450px) {
+    left: 230px;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 75%;
+  }
+  h2 {
+    font: 400 normal 70px/70px 'Bahianita', cursive;
+    display: inline-block;
+  }
+  .employees-input {
+    margin-top: 15px;
+    h3 {
+      font: 400 normal 20px/27px 'Noto Sans', sans-serif;
+      display: inline-block;
+    }
+    select {
+      outline: 1px solid#000000;
+      margin-left: 80px;
+      padding-left: 8px;
+      padding-right: 20px;
+      width: 224px;
+      height: 34px;
+      border-radius: 5px;
+    }
+  }
+  table {
+    margin-top: 40px;
+    border-spacing: 0px;
+    width: 95%;
+    th {
+      border: 1px solid #aaaaaa;
+      height: 40px;
+      font: 400 normal 14px/19px 'Noto Sans', sans-serif;
+    }
+  }
+}

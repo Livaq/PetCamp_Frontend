@@ -1,0 +1,65 @@
+.contact-page__wrap {
+  width: 100%;
+  background: rgba(117, 238, 217, 0.1);
+  min-height: 100vh;
+
+  .contact-page__container {
+    padding-bottom: 8rem;
+    width: 90%;
+    margin: 0 auto;
+
+    h2 {
+      font-family: Bahianita, serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 3.25rem;
+      padding-top: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-page__contacts-wrap {
+      display: flex;
+      justify-content: space-between;
+      min-height: 30rem;
+
+      .contact-page__contacts-container {
+        width: 50%;
+
+        h3 {
+          font-family: Noto Sans, serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.5rem;
+          text-decoration: underline;
+        }
+
+        .contact-page__contacts-items-container {
+        }
+      }
+    }
+
+    .contact-page__map-container {
+      width: 100%;
+      height: 20rem;
+      background: gray;
+      margin-top: 2rem;
+    }
+
+    .contact-page__webpage-info-container {
+      font-family: Noto Sans, serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 0.875rem;
+      text-align: center;
+
+      div:nth-child(1) {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+      div:nth-child(4) {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.myReportsBoardItem__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.8% 0;
+  margin-top: 2%;
+  position: relative;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .item-avatar {
+      width: 3.1rem;
+      height: 3.1rem;
+      border-radius: 50%;
+    }
+
+    .item-avatar__icon {
+      position: absolute;
+      color: green;
+      width: 24px;
+      height: 24px;
+      top: 15%;
+      left: -2%;
+    }
+
+    .myReportsBoardItem__title {
+      font-family: 'Noto Sans';
+      font-size: 0.75rem;
+      line-height: 1rem;
+      display: flex;
+      align-items: center;
+      color: #76707f;
+    }
+
+    .myReportsBoardItem__data {
+      font-family: 'Noto Sans';
+      font-size: 1rem;
+      line-height: 1.375rem;
+      display: flex;
+      align-items: center;
+      color: #000000;
+    }
+
+    .link {
+      font-family: Noto Sans;
+      font-size: 1.15rem;
+      color: #5d5fef;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: transparent;
+      cursor: pointer;
+
+      .arrow {
+        margin-left: 7px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 788px) {
+  .myReportsBoardItem__container {
+    & div {
+      .myReportsBoardItem__title {
+        font-size: 0.75rem;
+      }
+
+      .myReportsBoardItem__data {
+        font-size: 0.9rem;
+      }
+
+      .link {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .myReportsBoardItem__container {
+    flex-direction: column;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #dfdfdf;
+    }
+
+    & div {
+      .item-avatar {
+        width: 30%;
+        height: 30%;
+        margin: 0 auto;
+      }
+
+      .item-avatar__icon {
+        width: 36px;
+        height: 36px;
+        top: 2%;
+        left: 34%;
+      }
+
+      .myReportsBoardItem__title {
+        font-size: 0.9rem;
+        padding: 12px 0 4px 0;
+      }
+
+      .myReportsBoardItem__data {
+        font-size: 1.2rem;
+      }
+
+      .link {
+        font-size: 1.3rem;
+        justify-content: start;
+      }
+    }
+  }
+}

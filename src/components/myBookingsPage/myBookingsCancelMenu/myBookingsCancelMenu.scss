@@ -1,0 +1,60 @@
+.my-bookings-cancel-menu__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 21rem;
+  height: 11rem;
+
+  p {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 1rem 2rem 1rem;
+  }
+
+  .my-bookings-cancel-menu__btn-container {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+}
+
+.bookings-card__button {
+  display: block;
+  border-radius: 5px;
+  background-color: white;
+  width: 100px;
+  height: 40px;
+  font: 600 normal 1rem 'Noto Sans', Sans;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.decline-btn {
+  color: rgb(219, 93, 158);
+  border: 1px solid rgb(219, 93, 158);
+
+  &:hover {
+    background-color: rgb(219, 93, 158);
+    cursor: pointer;
+    color: white;
+  }
+}
+
+.accept-btn {
+  color: #7879f1;
+  border: 1px solid #7879f1;
+
+  &:hover {
+    background-color: #7879f1;
+    cursor: pointer;
+    color: white;
+  }
+}

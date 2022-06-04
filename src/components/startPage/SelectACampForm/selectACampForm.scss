@@ -1,0 +1,232 @@
+.select-a-camp {
+  width: 45%;
+  font-family: 'Bahianita', serif;
+  font-size: 2.5rem;
+
+  .select-a-camp__content {
+    width: 100%;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin: 1rem 0;
+    }
+
+    .select-a-camp__address-form {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      .map-wrapper {
+        width: 45%;
+        height: 100%;
+        margin-left: 1rem;
+      }
+
+      .select-camp-form__address-data {
+        width: 45%;
+
+        .select-camp-form__select-address {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          margin-top: 2rem;
+
+          select {
+            outline: none;
+            width: 100%;
+            height: 2rem;
+            border-radius: 0.2rem;
+            appearance: none;
+            border: 0.05rem solid gray;
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: normal;
+            padding-left: 1rem;
+            color: #76707f;
+          }
+        }
+
+        .checkbox__select-pet {
+          display: flex;
+          flex-wrap: wrap;
+
+          .checkbox__label {
+            display: flex;
+            align-items: center;
+            font-family: 'Noto Sans';
+            font-size: 18px;
+            line-height: 25px;
+            padding: 0 10px 10px 0px;
+
+            input {
+              margin-right: 0.25rem;
+              background-color: rgba(255, 255, 255, 0.7);
+              border-radius: 0.3rem;
+              width: 1.25rem;
+              height: 1.25rem;
+              border: solid 0.1rem gray;
+            }
+          }
+        }
+
+        .input__quantity {
+          display: flex;
+          align-items: center;
+          font-family: 'Noto Sans';
+          font-size: 18px;
+          padding: 0 10px 10px 0px;
+
+          .input-container {
+            width: 50px;
+            min-height: 20px;
+            box-sizing: border-box;
+            padding: 0;
+            border-radius: 0.3rem;
+            margin-right: 5px;
+            font-size: 12px;
+            border: solid 0.05rem gray;
+            background-color: rgba(255, 255, 255, 0.7);
+          }
+
+          .mySelect__value-container {
+            height: 20px;
+            text-align: center;
+            padding: 0;
+          }
+
+          .mySelect__control,
+          .mySelect__indicator {
+            min-height: 20px !important;
+            padding: 0;
+          }
+
+          .mySelect__input-container {
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+
+            .mySelect__input {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+
+      .select-camp-form__select-dates {
+        margin-top: 2.5rem;
+
+        .date-inputs {
+          width: 100%;
+          justify-content: space-between;
+
+          input {
+            width: 100%;
+            height: 2rem;
+            border-radius: 0.2rem;
+            border: 0.05rem solid gray;
+            padding-left: 1rem;
+            font-family: 'Noto Sans', sans-serif;
+            color: #76707f;
+          }
+        }
+      }
+
+      .check-button {
+        width: 7.5rem;
+        height: 2.5rem;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        background-color: #5d5fef;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        color: white;
+        align-self: flex-end;
+        box-shadow: 1px 2px 3px black;
+
+        &:disabled {
+          background-color: gray;
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .select-a-camp {
+    width: 100%;
+
+    .select-a-camp__content {
+      .select-a-camp__address-form {
+        justify-content: space-between;
+
+        .select-camp-form__address-data {
+          .checkbox__select-pet {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .select-a-camp {
+    width: 100%;
+    text-align: center;
+
+    .select-a-camp__content {
+      width: 100%;
+      margin: 0 auto;
+
+      h2 {
+        margin: 1rem 0;
+      }
+
+      .select-a-camp__address-form {
+        width: 100%;
+        flex-direction: column-reverse;
+
+        .map-wrapper {
+          width: 100%;
+          margin: 1rem auto 1rem auto;
+        }
+
+        .select-camp-form__address-data {
+          width: 100%;
+
+          .select-camp-form__select-address {
+            select {
+              width: 80%;
+              margin: 0 auto;
+            }
+          }
+
+          .checkbox__select-pet {
+            width: 100%;
+            justify-content: space-around;
+          }
+        }
+        .select-camp-form__select-dates {
+          margin-top: 1rem;
+
+          .date-inputs {
+            width: 100%;
+            justify-content: space-between;
+
+            input {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.pets {
+  padding: 0 100px 300px 100px;
+  min-height: 100vh;
+
+  @media (max-width: 910px) {
+    padding: 0 40px 200px 40px;
+  }
+
+  @media (max-width: 610px) {
+    padding: 0 30px;
+  }
+
+  background: #75eed91a;
+  height: 100%;
+
+  h2 {
+    padding-top: 50px;
+    font: 400 normal 52px/52px 'Bahianita', serif;
+  }
+
+  .cards {
+    .pets-cards {
+      display: flex;
+      column-gap: 50px;
+      flex-wrap: wrap;
+
+      @media (max-width: 765px) {
+        width: 100%;
+      }
+    }
+
+    display: flex;
+    width: 100%;
+    margin-top: 35px;
+    column-gap: 50px;
+    row-gap: 25px;
+
+    @media (max-width: 910px) {
+      column-gap: 25px;
+      column-gap: calc(100% - 660px);
+    }
+
+    @media (max-width: 610px) {
+      column-gap: 15px;
+    }
+
+    flex-wrap: wrap;
+
+    .add-pet {
+      margin: 2rem 0 0 0;
+      background-color: #fff;
+      width: 330px;
+      height: 580px;
+      padding-top: 140px;
+      border-radius: 4px;
+      border: 1px solid #c9c9c9;
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+
+      @media (max-width: 765px) {
+        width: 100%;
+      }
+
+      &-btn {
+        display: block;
+        margin: 0 auto;
+        height: 158px;
+        width: 158px;
+        font-size: 52px;
+        font-weight: 400;
+        color: #7072ff;
+        border-radius: 50%;
+        background-color: #7072ff15;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%237072FFFF' stroke-width='3' stroke-dasharray='5%25%2c 5%25' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e");
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #7072ff40;
+          background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%237072FFFF' stroke-width='3' stroke-dasharray='5%25%2c 5%25' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e");
+        }
+      }
+
+      p {
+        margin-top: 25px;
+        font: 400 normal 1.25rem/1.75rem 'Noto Sans', serif;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.spiner {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+}

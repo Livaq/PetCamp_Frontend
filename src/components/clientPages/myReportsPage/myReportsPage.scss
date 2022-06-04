@@ -1,0 +1,56 @@
+.reports {
+  padding: 0 100px 300px 100px;
+  min-height: 100vh;
+
+  @media (max-width: 910px) {
+    padding: 0 40px 200px 40px;
+  }
+
+  @media (max-width: 610px) {
+    padding: 0 30px;
+  }
+
+  background: #75eed91a;
+  height: 100%;
+
+  h2 {
+    padding-top: 50px;
+    font: 400 normal 52px/52px 'Bahianita', serif;
+  }
+
+  .cards {
+    .reports-cards {
+      display: flex;
+      column-gap: 50px;
+      flex-wrap: wrap;
+
+      @media (max-width: 765px) {
+        width: 100%;
+      }
+    }
+
+    display: flex;
+    width: 100%;
+    margin-top: 35px;
+    column-gap: 50px;
+    row-gap: 25px;
+
+    @media (max-width: 910px) {
+      column-gap: 25px;
+      column-gap: calc(100% - 660px);
+    }
+
+    @media (max-width: 610px) {
+      column-gap: 15px;
+    }
+
+    flex-wrap: wrap;
+  }
+}
+
+.spiner {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+}

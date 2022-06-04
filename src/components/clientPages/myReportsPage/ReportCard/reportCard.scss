@@ -1,0 +1,191 @@
+@keyframes hideAnimationReport {
+  from {
+    height: 25.7rem;
+  }
+  to {
+    height: 7.6rem;
+  }
+}
+
+@keyframes showAnimationReport {
+  from {
+    height: 7.6rem;
+  }
+  to {
+    height: 25.7rem;
+  }
+}
+
+.hide-animation-report {
+  animation: hideAnimationReport 0.5s;
+}
+
+.show-animation-report {
+  animation: showAnimationReport 0.5s;
+}
+
+.reports-card__container-hidden {
+  width: 34.4rem;
+  height: 7.6rem;
+  background: #ffffff;
+  margin: 2rem 0 0 0;
+  border: 1px solid #c9c9c9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.reports-card__container-shown {
+  width: 34.4rem;
+  height: 25.7rem;
+  background: #ffffff;
+  margin: 2rem 0 0 0;
+  border: 1px solid #c9c9c9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.report__content {
+  width: 34.4rem;
+  height: 25.7rem;
+  padding: 1.125rem 2.8rem;
+  background-color: white;
+  .report__content-header {
+    display: flex;
+    justify-content: space-between;
+    .report__content-header__image img {
+      width: 5.375rem;
+      height: 5.375rem;
+    }
+    .report__content-header__info {
+      display: flex;
+      flex-direction: column;
+      .report__content-header__booking {
+        display: flex;
+        justify-content: space-around;
+        .report__content-header__booking-item {
+          display: flex;
+          margin: 0 1.3rem 1rem 0;
+          flex-direction: column;
+          .booking-item__title {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            color: #76707f;
+          }
+          .booking-item__data {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1rem;
+            line-height: 1.375rem;
+            color: #000000;
+          }
+        }
+      }
+      .pet-nickname__container {
+        display: flex;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.25rem;
+        line-height: 1.7rem;
+        color: #000000;
+        .pet-nickname__container-title {
+          margin-left: 0.2rem;
+        }
+      }
+    }
+  }
+}
+.report__content-selects {
+  margin-top: 2.3rem;
+  margin-bottom: 1.625rem;
+  .report-window__label {
+    display: flex;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+    color: #000000;
+    margin: 0.7rem 1.25rem 0.7rem 0;
+    div {
+      min-width: 4.7rem;
+      margin-right: 1.25rem;
+    }
+
+    select {
+      border: 0.5px solid #000000;
+      box-sizing: border-box;
+      border-radius: 5px;
+      width: 14rem;
+      height: 2.125rem;
+      margin-left: 1.25rem;
+    }
+  }
+}
+
+.report__content-gallery-photos {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.625rem 0;
+}
+.report__content-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.625rem;
+  .report__content-reporter__title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #76707f;
+  }
+  .report__content-reporter__data {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+    color: #000000;
+  }
+}
+.report-card__arrow-img-container {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 7.5%;
+  background: white;
+  height: 2rem;
+
+  button {
+    width: 1.5rem;
+    height: 0.6rem;
+    background: transparent;
+
+    .report-card__arrow-img-hide {
+      width: 1.5rem;
+      height: 0.6rem;
+      cursor: pointer;
+    }
+
+    .report-card__arrow-img-show {
+      width: 1.5rem;
+      height: 0.6rem;
+      cursor: pointer;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.button-hide {
+  display: none;
+}

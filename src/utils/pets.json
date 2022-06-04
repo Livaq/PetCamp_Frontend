@@ -1,0 +1,16 @@
+[
+    {
+      "type": "Cat",
+      "name": "Felix",
+      "age": "10",
+      "gender": "M",
+      "vaccinated": true
+    },
+    {
+      "type": "Dog",
+      "name": "Milo",
+      "age": "3",
+      "gender": "M",
+      "vaccinated": true
+    }
+  ]

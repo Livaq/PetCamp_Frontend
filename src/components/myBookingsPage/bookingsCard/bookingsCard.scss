@@ -1,0 +1,160 @@
+@keyframes hideAnimation {
+  from {
+    height: 36rem;
+  }
+  to {
+    height: 15rem;
+  }
+}
+
+@keyframes showAnimation {
+  from {
+    height: 15rem;
+  }
+  to {
+    height: 36rem;
+  }
+}
+
+.hide-animation {
+  animation: hideAnimation 0.5s;
+}
+
+.show-animation {
+  animation: showAnimation 0.5s;
+}
+
+.bookings-card__container-hidden {
+  width: 21rem;
+  height: 15rem;
+  background: #FFFFFF;
+  margin: 2rem 0 0 0;
+  border: 1px solid #C9C9C9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bookings-card__container-shown {
+  width: 21rem;
+  height: 36rem;
+  background: #FFFFFF;
+  margin: 2rem 0 0 0;
+  border: 1px solid #C9C9C9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bookings-card__inner-container {
+  width: 85%;
+  margin: 0 auto;
+
+  .bookings-card__img-container {
+    text-align: center;
+    margin: 1rem auto;
+
+    img {
+      width: 86px;
+      height: 86px;
+    }
+  }
+
+  .bookings-card__pet-name-header {
+    font-family: Noto Sans, serif;
+    font-style: normal;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .bookings-card__content-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    font-style: normal;
+    margin-bottom: 0.8rem;
+    text-align: right;
+
+    span:nth-child(1) {
+      color: #666666;
+    }
+
+    .bookings-card__content-item_camera {
+      font-weight: 600;
+      font-size: 1rem;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  .bookings-card__button-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+
+    .bookings-card__delete-card-button {
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .bookings-card__button {
+      display: block;
+      border-radius: 5px;
+      background-color: white;
+      width: 100px;
+      height: 40px;
+      font: 600 normal 1rem 'Noto Sans', Sans;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .decline-btn {
+      color: rgb(219, 93, 158);
+      border: 1px solid rgb(219, 93, 158);
+
+      &:hover {
+        background-color: rgb(219, 93, 158);
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+
+  .bookings-card__arrow-img-container {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 0;
+    right: 7.5%;
+    background: white;
+    width: 100%;
+    height: 2rem;
+
+    button {
+      width: 1.5rem;
+      height: 0.6rem;
+      background: transparent;
+
+      .bookings-card__arrow-img-hide {
+        width: 1.5rem;
+        height: 0.6rem;
+        cursor: pointer;
+      }
+
+      .bookings-card__arrow-img-show {
+        width: 1.5rem;
+        height: 0.6rem;
+        cursor: pointer;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.button-hide {
+  display: none;
+}
+

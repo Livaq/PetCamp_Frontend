@@ -1,0 +1,58 @@
+.admin-page-profile {
+  position: absolute;
+  left: 280px;
+  top: 100px;
+  @media screen and (max-width: 1450px) {
+    left: 230px;
+  }
+  .user-info {
+    margin-top: 15px;
+    display: flex;
+    column-gap: 30px;
+    img {
+      width: 145px;
+      height: 145px;
+    }
+    .contact-info {
+      h3 {
+        font: 400 normal 30px/41px 'Noto Sans', sans-serif;
+      }
+      h4 {
+        font: 400 normal 20px/27px 'Noto Sans', sans-serif;
+      }
+      .admin-contacts {
+        list-style: none;
+        margin-top: 10px;
+        li {
+          font: 400 normal 20px/20px 'Noto Sans', sans-serif;
+          height: 24px;
+          margin-left: 45px;
+          margin-top: 15px;
+          display: block;
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            bottom: 2px;
+            display: block;
+            width: 24px;
+            height: 24px;
+          }
+        }
+        #phone::before {
+          background: url('../../../assets/icons/phone.svg');
+        }
+        #e-mail::before {
+          background: url('../../../assets/icons/email.svg');
+        }
+        #location::before {
+          background: url('../../../assets/icons/location.svg');
+        }
+      }
+    }
+  }
+  h2 {
+    font: 400 normal 70px/70px 'Bahianita', cursive;
+  }
+}
